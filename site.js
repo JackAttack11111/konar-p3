@@ -41,6 +41,55 @@ const vue_app = Vue.createApp({
     },
       methods: {
             /* ADD FUNCTIONS/METHODS FOR STEP 7 HERE */
+            getMonthText(dateArray) {
+                  const [year, month, day] = dateArray;
+                  const monthText = this.newMonth(month)
+                  return `${monthText} ${day}, ${year}`;
+            },
+
+            newMonth(month) {
+                  switch(month) {
+                        case 1:
+                        return "January";
+                        case 2: 
+                        return "February";
+                        case 3:
+                        return "March";
+                        case 4:
+                        return "April";
+                        case 5:
+                        return "May";
+                        case 6:
+                        return "June";
+                        case 7:
+                        return "July";
+                        case 8:
+                        return "August";
+                        case 9:
+                        return "September";
+                        case 10:
+                        return "October";
+                        case 11:
+                        return "November";
+                        case 12:
+                        return "December";
+                  }
+            },
+
+            posterClick(index) {
+                  if(this.movies[index].posterindex < this.movies[index].posters.length) {
+                        this.movies[index].posterindex++;
+                  }
+                  if(this.movies[index].posterindex >= this.movies[index].posters.length) {
+                        this.movies[index].posterindex = 0
+                  }
+            },
+
+            timeText(time) {
+                  let hours = Math.trunc(time / 60);
+                  let minutes = Math.abs(time / 60 - hours);
+                  return `${hours}h ${Math.ceil(minutes * 60)}m`
+            }
       }
 })
 

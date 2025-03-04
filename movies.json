@@ -68,5 +68,47 @@
             "likes": 812,
             "dislikes": 101,
             "posterindex": 0
+      },
+      {
+            "title": "Attention Attention",
+            "iscore": 8.2,
+            "rating": "PG",
+            "runtime": 64,
+            "released": [2021, 9, 3],
+            "country": "USA",
+            "posters": ["img/attention1.jpg"],
+            "imdb": "https://www.imdb.com/title/tt14764736/",
+            "website": "https://www.attentionattentionfilm.com/",
+            "likes": 660,
+            "dislikes": 101,
+            "posterindex": 0
+      },
+      {
+            "title": "Men In Black",
+            "iscore": 7.3,
+            "rating": "PG-13",
+            "runtime": 98,
+            "released": [1997, 6, 25],
+            "country": "USA",
+            "posters": ["img/mib1.jpg", "img/mib2.jpg"],
+            "imdb": "https://www.imdb.com/title/tt0119654/",
+            "website": "https://www.sonypictures.com/movies/meninblack",
+            "likes": 6630,
+            "dislikes": 301,
+            "posterindex": 0
+      },
+      {
+            "title": "Whiplash",
+            "iscore": 8.5,
+            "rating": "R",
+            "runtime": 106,
+            "released": [2014, 1, 16],
+            "country": "USA",
+            "posters": ["img/whiplash1.jpg", "img/whiplash2.jpg"],
+            "imdb": "https://www.imdb.com/title/tt2582802/",
+            "website": "https://whiplashmovie.com/home/",
+            "likes": 9030,
+            "dislikes": 201,
+            "posterindex": 0
       }
 ]
